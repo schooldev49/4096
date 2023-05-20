@@ -13,4 +13,4 @@ __overview__
 - easy mode - this mode is easy.
 - hard mode - this mode is hard.
 - impossible mode - this mode is impossible?
-- secret mode - ???
+- corrupted mode - ???
