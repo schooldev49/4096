@@ -12,7 +12,7 @@ __overview__
 <br>
 - easy mode - this mode is easy.
 - hard mode - this mode is hard.
-- impossible mode - this mode is impossible?
+- impossible mode - this mode is impossible? block spawns are rigged to match the least favorable position
 - corrupted mode - ???
 
 <br>
