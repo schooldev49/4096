@@ -1,4 +1,4 @@
-import table from "./components/table";
+import table from "./components/table.js";
 class game_model {
   constructor (mode) {
     this.mode = mode;
