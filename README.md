@@ -14,3 +14,6 @@ __overview__
 - hard mode - this mode is hard.
 - impossible mode - this mode is impossible?
 - corrupted mode - ???
+
+<br>
+pets - they automatically make a move every 15-30 seconds using AI assuming you made one other move, but make the game a "little" bit harder..? (WIP)
