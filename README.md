@@ -17,4 +17,6 @@ __overview__
 
 <br>
 pets - they automatically make a move every 15-30 seconds using AI assuming you made one other move, but make the game a "little" bit harder..? (WIP)
+<br>
 - unlock pets from beating ??? (and low drop from hard/impossible mode)
+- trading system - must have beaten hard mode or above once to trade
