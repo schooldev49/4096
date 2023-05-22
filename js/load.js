@@ -1,6 +1,6 @@
 import game_model from './game_model.js'
 window.requestAnimationFrame = () => {
-  const game_Mode = localStorage.getItem('mode') || "hard"
+  const game_Mode = localStorage.getItem('mode') || "easy"
   try {
     const game_Instance = new game_model(game_Mode);
     console.log("GAME LOADED")
