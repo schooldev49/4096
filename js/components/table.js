@@ -5,7 +5,7 @@ class table {
       current: rows,
       get a(){
         return current;
-      }
+      },
       set a(tab) {
         //transform table
         current = tab;
@@ -15,7 +15,7 @@ class table {
       current: cols,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         // transform table
         current = tab;
@@ -35,7 +35,7 @@ class table {
       current: rows * cols,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         // useless
         current = rows * cols;

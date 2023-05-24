@@ -44,7 +44,7 @@ class tile {
       current: img,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         // change tile background image
         current = tab;

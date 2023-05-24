@@ -1,21 +1,22 @@
 import table from "./components/table.js";
+import input_manager from './input_manager.js'
 class game_model {
   constructor (mode) {
     this.mode = {
       current: mode,
       get a(){
         return mode;
-      }
+      },
       set a(tab){
         // set game mode :)
          current = tab;
          switch (tab){
           case "hard":
-            let tableHard = new table("hard",5,5);
+            this.tableIn = new table("hard",5,5);
           case "easy":
-            let tableEasy = new table("easy", 4,4);
+            this.tableIn = new table("easy", 4,4);
           case "impossible":      
-            let tableImpossible = new table("impossible",6,6);
+            this.tableIn = new table("impossible",6,6);
           default:
             return "[internal error]: did not provide a game mode";
             break;
@@ -26,7 +27,7 @@ class game_model {
       current: false,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         current = tab;
       }
@@ -35,7 +36,7 @@ class game_model {
       current: null,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         current = tab;
       }
@@ -44,22 +45,26 @@ class game_model {
       current: false,
       get a(){
         return current;
-      }
+      },
       set a(tab){
         current = tab;
       }
     };
+
     switch (mode){
       case "hard":
-        let tableHard = new table("hard",5,5);
+        this.tableIn = new table("hard",5,5);
       case "easy":
-        let tableEasy = new table("easy", 4,4);
+        this.tableIn = new table("easy", 4,4);
       case "impossible":      
-        let tableImpossible = new table("impossible",6,6);
+        this.tableIn = new table("impossible",6,6);
       default:
         return "[internal error]: did not provide a game mode";
         break;
     }
+    this.Input = new input_manager(this.tableIn);
+
+    Input.listen();
   }
   newGame = (mode) => {
     this.mode = mode;
